@@ -3,7 +3,6 @@ function test(){
 }
 
 function testResults (form) {
-    alert('testing')
     var t1 = parseFloat(form.testone.value);
     var t2 = parseFloat(form.testtwo.value);
     var t3 = parseFloat(form.testthree.value);
@@ -85,13 +84,25 @@ function testResults (form) {
 
     text = "Your grade in the class is a " + Number(final.toFixed(3)) + ", which is a(n) " + grade
     +". "
-    var forAB = (80 -bucket*.15 - lab*.20 -avgTest*weights)/.65;
-    var forAnA = (90 -bucket*.15 - lab*.20 -avgTest*weights)/.65;
+
 
     if (weightsLeft != 0) {
+        var countsfor = weightsLeft+.25
+        var forAB = (80-((1-countsfor)*final))/countsfor;
+        var forAnA = (90-((1-countsfor)*final))/countsfor;
         text = text + "In order to get a B, you will need to have a " + Number(forAB.toFixed(3))
-        + " average on the remaining test(s) and the final. " +
-        "For an A, you will need a " + Number(forAnA.toFixed(3)) + " average on the remaining test(s) and the final." 
+        + "% average on the remaining test(s) and the final. " +
+        "For an A, you will need a " + Number(forAnA.toFixed(3)) + "% average " +
+        "on the remaining test(s) and the final.\nNote: Due to variable course weights, "
+        + "this will likely be an overstimate."
+    } else if (bool2) {
+        var forAnA = (90-(.75*final))/.25
+        var forAB = (80-(.75*final))/.25
+        text = text + "In order to get a B, you will need to have a " + Number(forAB.toFixed(3))
+        + "% average on the final. " +
+        "For an A, you will need a " + Number(forAnA.toFixed(3)) + "% average on"
+        + " the final.\nNote: Due to variable course weights, "
+        + "this will likely be an overstimate."
     }
     document.getElementById("results").innerHTML = text;
 
