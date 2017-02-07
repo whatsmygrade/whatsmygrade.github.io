@@ -93,7 +93,7 @@ function testResults (form) {
         text = text + "In order to get a B, you will need to have a " + Number(forAB.toFixed(3))
         + "% average on the remaining test(s) and the final. " +
         "For an A, you will need a " + Number(forAnA.toFixed(3)) + "% average " +
-        "on the remaining test(s) and the final.\nNote: Due to variable course weights, "
+        "on the remaining test(s) and the final.\nNote: Due to variable test weights, "
         + "this will likely be an overstimate."
     } else if (bool2) {
         var forAnA = (90-(.75*final))/.25
@@ -101,8 +101,7 @@ function testResults (form) {
         text = text + "In order to get a B, you will need to have a " + Number(forAB.toFixed(3))
         + "% average on the final. " +
         "For an A, you will need a " + Number(forAnA.toFixed(3)) + "% average on"
-        + " the final.\nNote: Due to variable course weights, "
-        + "this will likely be an overstimate."
+        + " the final."
     }
     document.getElementById("results").innerHTML = text;
 
