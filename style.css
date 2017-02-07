@@ -1,0 +1,124 @@
+
+a{
+	text-decoration:none;
+    color:#f9f9f9;
+}
+#description a{
+    text-decoration:underline;
+    color:#000000;
+}
+
+a:active {
+	text-decoration:none;
+ 	color:#f9f9f9;
+}
+a:visited{
+	text-decoration:none;
+	color:#f9f9f9;
+}
+
+a:hover{
+	text-decoration:none;
+  	color:#cccccc;
+
+}
+
+body{
+	background-color:#f9f9f9;
+}
+#main{
+	font-family:'Monserrat', georgia, 'Times New Roman';
+	font-size: 12px;
+	line-height: 1.5;
+	color: #525256;
+	display:flex;
+
+}
+#navegation{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom:-110px;
+    background:#000000;
+    width: 200px;
+    font-size:30px;
+}
+ul.sidebar, a.sidebar{
+	list-style-type: none;
+	text-decoration:none;
+	display:block;
+
+	padding: 5px;
+	text-align: center;
+}
+
+#header{
+	top:0px;
+	left: 110px;
+	bottom: 0;
+	text-align: center;
+	margin-left: 220px;
+}
+
+h1.top{
+	font: cursive;
+	font-style:italic;
+	color:#3e3e3e;
+	font-size: 30px;
+
+}
+h4.top{
+	font-size: 15px;
+}
+
+
+#calculator, #description{
+	margin-top:10px;
+	margin-left:220px;
+	margin-right:20px;
+
+
+}
+span.storyBook{
+	font-size:30px;
+	font-style:italic;
+}
+span.notItalics{
+	font-style:none;
+}
+p.rightAlign{
+	font-style:italic;
+	font-weight:bold;
+	color:gray;
+	text-align:right;
+	margin-right:40px;
+}
+#alchemist p{
+	font-size: 15px;
+	text-indent:2%;
+}
+#calculator p{
+	font-size: 15px;
+	text-indent:2%;
+}
+#calculator ul{
+	font-size: 15px;
+}
+
+h1.top{
+	text-decoration:none;
+}
+#table input{
+    width:50px;
+}
+table, th, td {
+   border: .5px;
+   border-color:#000000;
+   font-size:15px;
+   padding: 5px;
+}
+.head{
+	font-weight:bold;
+}
+table{
+}
