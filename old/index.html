@@ -1,0 +1,169 @@
+<!Doctype html>
+<html>
+	<head>
+
+		<title>Grade Calculator - Physics 2211/2212</title>
+		<link rel='stylesheet' type = 'text/css' media = 'screen' href = 'style.css' />
+        <script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id='main'>
+			<div id='navegation'>
+				<ul class='sidebar'>
+  					<li><a class='sidebar' href="index.html">Home</a></li>
+ 					<li><a class='sidebar' href="gandalf.jpg">A Single Picture of Gandalf</a></li>
+  					<li><a class='sidebar' href="https://www.gofundme.com/give-me-money-2vxazmk">Donate </a></li>
+				</ul>
+			</div>
+
+			<div id='header'>
+				<h1 class = 'top'>Physics 2211/2212 Course Grade Calculator</h1>
+				<h4 class = 'top'>(Because WebAssign is a flake.)</h4>
+			</div >
+
+        </div>
+            <p id='description'>Fill in the following fields to calculate your course grade.
+                Leave no fields blank, except for tests you have not taken yet.<br><br>
+                The calculator will tell you what you need to make an A or a B. If your grade makes you sad,
+            <a href='http://corgiorgy.com/'>click here</a>.</p>
+			<form id='calculator' name='mycalc' action="">
+				<div id='table'>
+					<table id='tests'>
+						<tr>
+							<td class ='head'>Category</td>
+							<td class='head'> Test One</td>
+							<td class= 'head'> Test Two</td>
+                            <td class='head'> Test Three </td>
+                            <td class='head'> Test Four </td>
+                            <td class='head'> Test Average </td>
+                            <td class='head'> Final Exam </td>
+
+						</tr>
+						<tr>
+							<td class='head'> Weight</td>
+                            <td class='head'></td>
+							<td class='head'></td>
+                            <td class='head'></td>
+                            <td class='head'></td>
+                            <td class='head'>45</td>
+                            <td class='head'>25</td>
+						</tr>
+						<tr>
+							<td class='head'> Averages (%)</td>
+							<td><input type="text" name="testone"></td>
+							<td><input type="text" name="testtwo"></td>
+                            <td><input type="text" name="testthree"></td>
+                            <td><input type="text" name="testfour"></td>
+                            <td id='testavg'></td>
+                            <td><input type="text" name="fin"></td>
+					</table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td class = 'head'>Category</td>
+                            <td class='head'>Lab Quiz</td>
+                            <td class= 'head'>Lab Checkpoints</td>
+                            <td class='head'>Lab Assignments</td>
+                            <td class='head'>Lab Average</td>
+
+                        </tr>
+                        <tr>
+                            <td class='head'>Weight</td>
+                            <td class='head'>5</td>
+                            <td class= 'head'>10</td>
+                            <td class='head'>5</td>
+                            <td class='head'>20</td>
+
+
+                        </tr>
+                        <tr>
+                            <td class='head'> Averages (%)</td>
+                            <td><input type="text" name="labq"></td>
+                            <td><input type="text" name="labch"></td>
+                            <td><input type="text" name="laba"></td>
+                            <td id='lab'></td>
+
+                        </table>
+                        <br>
+                        <table>
+                            <tr>
+                                <td class = 'head'>Category</td>
+                                <td class='head'>Clickers</td>
+                                <td class= 'head'>Homework</td>
+                                <td class='head'>Optional</td>
+                                <td class='head'>Wiki</td>
+                                <td class='head'>Reading</td>
+                                <td class='head'>Public Lectures</td>
+                                <td class='head'>Bucket Possible</td>
+
+
+                            </tr>
+                            <tr>
+                                <td class='head'> Weight</td>
+                                <td class='head'>3</td>
+                                <td class= 'head'>5</td>
+                                <td class='head'>3</td>
+                                <td class='head'>2</td>
+                                <td class='head'>1</td>
+                                <td class='head'>1</td>
+                                <td class='head'>15</td>
+
+
+                            </tr>
+                            <tr>
+                                <td class='head'> Averages (%)</td>
+                                <td><input type="text" name="clickers"></td>
+                                <td><input type="text" name="hw"></td>
+                                <td><input type="text" name="opt"></td>
+                                <td><input type="text" name="wiki"></td>
+                                <td><input type="text" name="read"></td>
+                                <td><input type="text" name="lect"></td>
+                                <td id='bucket'></td>
+                            </table>
+                            <br>
+                            <table>
+                                <tr>
+                                    <td class = 'head'>Category</td>
+                                    <td class='head'>Extra Credit</td>
+                                    <td class= 'head'>Bucket</td>
+                                    <td class='head'>Core</td>
+                                </tr>
+                                <tr>
+                                    <td class='head'> Weight</td>
+                                    <td class='head'>2</td>
+                                    <td class= 'head'>10</td>
+                                    <td class='head'>90</td>
+
+                                </tr>
+                                <tr>
+                                    <td class='head'> Averages (%)</td>
+                                    <td id='ec'></td>
+                                    <td id='bucket2'></td>
+                                    <td id='core'></td>
+                                </table>
+                                <br>
+                            <table>
+                                <tr>
+                                    <td class= 'head'>Final Average</td>
+                                    <td class='head' id='final'></td>
+                                    <td class='head' id='grade'></td>
+                                </tr>
+                            </table>
+                                <br>
+
+                        </div>
+                        <p id="results" ></p>
+
+                        <input type="button" onclick="testResults(this.form)" value="Submit">
+                        <br>
+                        <span id='small'>This website was created by David King</span>
+				</form>
+
+
+<!--
+djfksdjfkdjf
+-->
+
+	</div>
+	</body>
+	</html>

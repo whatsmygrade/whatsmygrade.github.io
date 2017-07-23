@@ -1,140 +1,264 @@
-<!Doctype html>
+<!doctype html>
 <html>
-	<head>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="./css/animate.min.css"><link rel="stylesheet" href="./css/font-awesome.min.css"><link href='https://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+    <script src='./js/script.js'></script>
+    <title>Grade Calculator - Physics</title>
 
-		<title>Grade Calculator - Physics 2211/2212</title>
-		<link rel = 'stylesheet' type = 'text/css' media = 'screen' href = 'style.css' />
-        <script src="script.js" type="text/javascript"></script>
-	</head>
+    
+<!-- Google Analytics -->
+ 
+<!-- Google Analytics END -->
+    
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0
+<div class="bloc bgc-isabelline l-bloc" id="bloc-0">
+	<div class="container bloc-sm">
+		<nav class="navbar nav-invert row mini-nav">
+			<div class="collapse navbar-collapse navbar-1 nav-special sidebar-nav">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html" class="ltc-daffodil">Calculator</a>
+				        <a href="index.html" class="ltc-daffodil">Gandalf Appreciation</a>
+				        
 
-</script>
-	<body>
-		<div id='main'>
-			<div id='navegation'>
-				<ul class='sidebar'>
-  					<li><a class='sidebar' href="index.html">Home</a></li>
- 					<li><a class='sidebar' href="gandalf.jpg">A Single Picture of Gandalf</a></li>
-  					<li><a class='sidebar' href="https://www.gofundme.com/give-me-money-2vxazmk">Donate </a></li>
+					</li>
 				</ul>
 			</div>
+		</nav>
+	</div>
+</div>
+bloc-0 END -->
+<!-- bloc-0 -->
+<div class="bloc bgc-isabelline l-bloc" id="bloc-0">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3 class="mg-md tc-dark-jungle-green ">
+                    <a href='https://www.webassign.net/gatech/login.html' target="_blank" >Go to WebAssign</a>
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-0 END -->
 
-			<div id='header'>
-				<h1 class = 'top'>Physics 2211/2212 Course Grade Calculator</h1>
-				<h4 class = 'top'>(Because WebAssign is a flake.)</h4>
-			</div >
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
 
-        </div>
-            <p id='description'>Fill in the following fields to calculate your course grade.
-                Leave no fields blank, except for tests you have not taken yet.<br><br>
-                The calculator will tell you what you need to make an A or a B. If your grade makes you sad,
+
+<!-- bloc-1 -->
+<div class="bloc bgc-isabelline l-bloc " id="bloc-1">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="mg-md  tc-dark-jungle-green">
+					Physics 2211/2212 <br>Course Grade Calculator<br>
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
+<!-- bloc-2 -->
+<div class="bloc bgc-isabelline l-bloc tc-dark-jungle-green" id="bloc-2">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12">
+            <p id='description'>Fill in the following fields using what's on WebAssign to calculate your course grade.
+                If you haven't taken a test yet, leave the field blank.
+                The calculator can tell you what you need on the next test(s) to make an A or a B. If your grade makes you sad,
             <a href='http://corgiorgy.com/'>click here</a>.</p>
-			<form id='calculator' name='mycalc' action="">
-				<div id='table'>
-					<table id='tests'>
-						<tr>
-							<td class ='head'>Category</td>
-							<td class='head'> Test One</td>
-							<td class= 'head'> Test Two</td>
-                            <td class='head'> Test Three </td>
-                            <td class='head'> Test Four </td>
-                            <td class='head'> Test Average </td>
-                            <td class='head'> Final Exam </td>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-2 END -->
+<form>
 
+<!-- Bloc Group -->
+<div class='bloc-group bgc-isabelline'>
+<!-- tests -->
+<div class="bloc bloc-tile-3 tc-dark-jungle-green l-bloc" id="tests">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12 table-responsive">
+			        <table >
+						<tr>
+							<td class ='head'></td>
+							<td class='head text-center'> Weight </td>
+							<td class= 'head'>Grade (%)</td>
 						</tr>
 						<tr>
-							<td class='head'> Weight</td>
-                            <td class='head'></td>
-							<td class='head'></td>
-                            <td class='head'></td>
-                            <td class='head'></td>
-                            <td class='head'>45</td>
-                            <td class='head'>25</td>
+							<td class='head'> Test 1</td>
+                            <td class=''></td>
+							<td class=''><input type="text" name="testone"></td>
 						</tr>
 						<tr>
-							<td class='head'> Averages (%)</td>
-							<td><input type="text" name="testone"></td>
-							<td><input type="text" name="testtwo"></td>
-                            <td><input type="text" name="testthree"></td>
-                            <td><input type="text" name="testfour"></td>
-                            <td id='testavg'></td>
-                            <td><input type="text" name="fin"></td>
+							<td class='head'> Test 2</td>
+                            <td class=''></td>
+							<td class=''><input type="text" name="testtwo"></td>
+						</tr>
+						<tr>
+							<td class='head'> Test 3</td>
+                            <td class=''></td>
+							<td class=''><input type="text" name="testthree"></td>
+						</tr>
+						<tr>
+							<td class='head'> Test 4</td>
+                            <td class=''></td>
+							<td class=''><input type="text" name="testfour"></td>
+						</tr>
+						<tr>
+							<td class='head'> Test Average</td>
+                            <td class=''>45%</td>
+							<td class='' id='testavg'></td>
+						</tr>
+						<tr>
+							<td class='head'> Final Exam</td>
+                            <td class=''>25%</td>
+							<td><input type="text" name="fin"></td>
+						</tr>
+						
+
 					</table>
-                    <br>
-                    <table>
-                        <tr>
-                            <td class = 'head'>Category</td>
-                            <td class='head'>Lab Quiz</td>
-                            <td class= 'head'>Lab Checkpoints</td>
-                            <td class='head'>Lab Assignments</td>
-                            <td class='head'>Lab Average</td>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- tests END -->
 
-                        </tr>
-                        <tr>
-                            <td class='head'>Weight</td>
-                            <td class='head'>5</td>
-                            <td class= 'head'>10</td>
-                            <td class='head'>5</td>
-                            <td class='head'>20</td>
+<!-- labs -->
+<div class="bloc bloc-tile-3 l-bloc tc-dark-jungle-green" id="labs">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12 table-responsive">
+			        <table>
+						<tr>
+							<td class ='head'></td>
+							<td class='head text-center'> Weight </td>
+							<td class= 'head'>Grade (%)</td>
+						</tr>
+						<tr>
+							<td class='head'> Lab Quiz</td>
+                            <td class=''>5%</td>
+							<td class=''><input type="text" name="labq"></td>
+						</tr>
+						<tr>
+							<td class='head'> Lab Checkpoints</td>
+                            <td class=''>10%</td>
+							<td class=''><input type="text" name="labch"></td>
+						</tr>
+						<tr>
+							<td class='head'> Lab Assignments</td>
+                            <td class=''>5%</td>
+							<td class=''><input type="text" name="laba"></td>
+						</tr>
+						<tr>
+							<td class='head'> Lab Average</td>
+                            <td class=''>20%</td>
+							<td class='' id='lab'></td>
+						</tr>
+						
+
+					</table>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- labs END -->
+<!-- buckets -->
+<div class="bloc bloc-tile-3 l-bloc tc-dark-jungle-green" id="buckets">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12 table-responsive">
+					<table>
+						<tr>
+							<td class ='head'></td>
+							<td class='head text-center'> Weight </td>
+							<td class= 'head'>Grade (%)</td>
+						</tr>
+						<tr>
+							<td class='head'> Clickers</td>
+                            <td class=''>3%</td>
+							<td class=''><input type="text" name="clickers"></td>
+						</tr>
+						<tr>
+							<td class='head'> Homework</td>
+                            <td class=''>5%</td>
+							<td class=''><input type="text" name="hw"></td>
+						</tr>
+						<tr>
+							<td class='head'> Optional</td>
+                            <td class=''>3%</td>
+							<td class=''><input type="text" name="opt"></td>
+						</tr>
+						<tr>
+							<td class='head'> Wiki</td>
+                            <td class=''>2%</td>
+							<td class=''><input type="text" name="wiki"></td>
+						</tr>
+						<tr>
+							<td class='head'> Reading</td>
+                            <td class=''>1%</td>
+							<td class=''><input type="text" name="read"></td>
+						</tr>
+						<tr>
+							<td class='head'> Public Lectures</td>
+                            <td class=''>1%</td>
+							<td class=''><input type="text" name="lect"></td>
+						</tr>
+						<tr>
+							<td class='head'> Bucket Possible</td>
+                            <td class=''>15%</td>
+							<td class='' id='bucket'></td>
+						</tr>
+						
+
+					</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- buckets END -->
+</div>
 
 
-                        </tr>
-                        <tr>
-                            <td class='head'> Averages (%)</td>
-                            <td><input type="text" name="labq"></td>
-                            <td><input type="text" name="labch"></td>
-                            <td><input type="text" name="laba"></td>
-                            <td id='lab'></td>
-
-                        </table>
-                        <br>
+<!-- bloc-3 -->
+<div class="bloc bgc-isabelline l-bloc tc-dark-jungle-green " id="bloc-3">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-12 table-responsive">
                         <table>
-                            <tr>
-                                <td class = 'head'>Category</td>
-                                <td class='head'>Clickers</td>
-                                <td class= 'head'>Homework</td>
-                                <td class='head'>Optional</td>
-                                <td class='head'>Wiki</td>
-                                <td class='head'>Reading</td>
-                                <td class='head'>Public Lectures</td>
-                                <td class='head'>Bucket Possible</td>
-
-
-                            </tr>
-                            <tr>
-                                <td class='head'> Weight</td>
-                                <td class='head'>3</td>
-                                <td class= 'head'>5</td>
-                                <td class='head'>3</td>
-                                <td class='head'>2</td>
-                                <td class='head'>1</td>
-                                <td class='head'>1</td>
-                                <td class='head'>15</td>
-
-
-                            </tr>
-                            <tr>
-                                <td class='head'> Averages (%)</td>
-                                <td><input type="text" name="clickers"></td>
-                                <td><input type="text" name="hw"></td>
-                                <td><input type="text" name="opt"></td>
-                                <td><input type="text" name="wiki"></td>
-                                <td><input type="text" name="read"></td>
-                                <td><input type="text" name="lect"></td>
-                                <td id='bucket'></td>
-                            </table>
-                            <br>
-                            <table>
                                 <tr>
-                                    <td class = 'head'>Category</td>
+                                    <td class = 'head'></td>
                                     <td class='head'>Extra Credit</td>
                                     <td class= 'head'>Bucket</td>
                                     <td class='head'>Core</td>
                                 </tr>
                                 <tr>
                                     <td class='head'> Weight</td>
-                                    <td class='head'>2</td>
-                                    <td class= 'head'>10</td>
-                                    <td class='head'>90</td>
+                                    <td class='head'>2%</td>
+                                    <td class= 'head'>10%</td>
+                                    <td class='head'>90%</td>
 
                                 </tr>
                                 <tr>
@@ -151,19 +275,29 @@
                                     <td class='head' id='grade'></td>
                                 </tr>
                             </table>
-                                <br>
+                            <p style='margin-left:10px' id="results" ></p>
 
-                        </div>
-                        <p id="results" ></p>
+                        <input style='margin-left:10px' type="button" class='btn btn-daffodil' onclick="testResults(this.form)" value="Submit">
 
-                        <input type="button" onclick="testResults(this.form)" value="Submit">
-                        <br>
-                        <span id='small'>This website was created by David King</span>
-				</form>
-
-
-
-
+			</div>
+		</div>
 	</div>
-	</body>
-	</html>
+</div>
+    </form>
+
+<!-- footer END -->
+<div class="bloc bgc-isabelline l-bloc tc-dark-jungle-green" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 table-responsive">
+                        <a style='margin-left:10px'  class='tc-dark-jungle-green' href='http://davidking0.github.io' id='small'>Created by David King</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Main container END -->
+    </div>
+
+</body>
+</html>
