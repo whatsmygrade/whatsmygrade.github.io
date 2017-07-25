@@ -112,10 +112,13 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 #bloc-0 h3 {
-    font-family:'Josefin Sans';
+    font-weight: 300;
+
 }
 #bloc-0 a, #bloc-2 a {
     color:#242425!important;
+}
+#bloc-0 a, #bloc-2 a {
     text-decoration: underline;
 }
 #bloc-0 a:hover, #bloc-2 a:hover {
@@ -123,11 +126,9 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 #bloc-1 h1{
 	font-weight: 100;
-	font-family: 'Josefin Sans';
 	font-size: 80px;
 }
 #bloc-1 h3{
-	font-family: 'Josefin Sans';
 	font-size: 30px;
 }
 
